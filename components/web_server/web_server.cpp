@@ -144,7 +144,7 @@ std::string WebServer::get_config_json() {
     root["soft_ssid"] = wifi::global_wifi_component->soft_ssid;
     root["hard_ssid"] = wifi::global_wifi_component->hard_ssid;
     root["has_ap"]    = wifi::global_wifi_component->has_ap();
-    root["free_sp"]   = ESP.getFreeSketchSpace();
+//    root["free_sp"]   = ESP.getFreeSketchSpace();
     root["mac_addr"]  = get_mac_address_pretty();
 
   });
